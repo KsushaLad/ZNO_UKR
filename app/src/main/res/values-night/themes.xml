@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.FISH" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="Theme.FISH" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">#C06AFD</item>
         <item name="colorPrimaryVariant">#C06AFD</item>
