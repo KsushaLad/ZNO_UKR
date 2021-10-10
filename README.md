@@ -1,5 +1,6 @@
 #  :notebook_with_decorative_cover::open_book: **ZNO application for Ukrainian student**
 ## The application is a directory that helps graduates 11 classes prepare for the exam in the Ukrainian language and literature.
+![Screenshot](photo_2021-10-10_21-19-45.jpg)
 ## This project uses:
 * Java; 
 * Collections; 
