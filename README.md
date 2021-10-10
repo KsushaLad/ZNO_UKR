@@ -12,6 +12,6 @@
 * IDE will collect this project.
 ## If you will use command line:
 * clone branch review with git clone or fork it and then clone it from your forked repo;
-* cd zno-ukr;
+* cd znoukr;
 * npm install;
 * npm start.
