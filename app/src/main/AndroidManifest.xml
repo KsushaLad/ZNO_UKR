@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ksusha.fish">
+    package="com.ksusha.zno_ukr">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FISH">
         <activity
-            android:name=".MainActivity"
+            android:name="com.ksusha.zno_ukr.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.FISH.NoActionBar"
@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Text_Content_Activity"
+            android:name="com.ksusha.zno_ukr.Text_Content_Activity"
             android:screenOrientation="portrait" />
     </application>
 
