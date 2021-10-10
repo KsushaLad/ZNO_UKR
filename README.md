@@ -5,7 +5,7 @@
 * Java; 
 * Collections; 
 * UI design.
-## Link on Google Play: https://tinyurl.com/ladoshko
+## Link on Google Play: https://tinyurl.com/znoukr
 ## This application was made in IDE Android Studio. For project build use Gradle and Android Studio:
 * Click the button "Code" and download the ZIP-file;
 * In Android Studio click "Import project";
