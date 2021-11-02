@@ -4,19 +4,36 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/fish"
-            android:icon="@drawable/ic_icons8_copy_64"
-            android:title="@string/ukrainskamova" />
-        <item
-            android:id="@+id/na"
-            android:icon="@drawable/ic_icons8_copy_64"
-            android:title="@string/na" />
-        <item
-            android:id="@+id/sna"
-            android:icon="@drawable/ic_icons8_copy_64"
-            android:title="@string/sna" />
 
+        <item android:title="@string/u1">
+            <menu>
+            <item android:id="@+id/ukr_mova"
+                android:icon="@drawable/book_we"
+                android:title="@string/ukrainskamova" />
+            </menu>
+        </item>
+        <item android:title="@string/u2">
+            <menu>
+                <item android:id="@+id/ukr_lit"
+                    android:icon="@drawable/book_we"
+                    android:title="@string/ukrliteratura"
+                    />
+            </menu>
+        </item>
+        <item android:title="@string/u3">
+            <menu>
+                <item android:id="@+id/nagolosy"
+                    android:icon="@drawable/book_we"
+                    android:title="@string/nagolosy" />
+            </menu>
+        </item>
+        <item android:title="@string/popular_fraze">
+            <menu>
+                <item android:id="@+id/fraze"
+                    android:icon="@drawable/book_we"
+                    android:title="@string/fraze" />
+            </menu>
 
+        </item>
     </group>
 </menu>

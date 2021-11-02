@@ -10,25 +10,23 @@
         android:id="@+id/AppBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/background"
+        android:background="@drawable/item_menu"
         android:focusableInTouchMode="false"
-        android:foreground="@drawable/ooo"
-        android:theme="@style/Theme.FISH.NoActionBar">
 
+        android:theme="@style/Theme.FISH.NoActionBar">
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="58dp"
-            android:background="@color/background"
+            android:background="@drawable/item_menu"
             android:theme="@style/Theme.FISH"
             app:popupTheme="@style/Theme.FISH.NoActionBar">
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="wrap_content"
+                android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:alpha="1.0"
-                android:background="@color/background"
-                android:foreground="@drawable/book"
+                android:foreground="@drawable/book_we"
                 android:paddingStart="50dp"
                 android:paddingLeft="50dp" />
 

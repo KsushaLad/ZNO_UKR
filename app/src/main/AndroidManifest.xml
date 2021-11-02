@@ -9,21 +9,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FISH">
+
         <activity
-            android:name="com.ksusha.zno_ukr.MainActivity"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.FISH.NoActionBar"
-            android:exported="true">
+            android:name="com.ksusha.zno_ukr.Logo_Activity"
+            android:exported="true"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name="com.ksusha.zno_ukr.Text_Content_Activity"
             android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.ksusha.zno_ukr.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+
+            android:theme="@style/Theme.FISH.NoActionBar"
+
+            />
+
     </application>
 
 </manifest>

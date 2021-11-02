@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ListView list = findViewById(R.id.listView);
-        array = getResources().getStringArray(R.array.ukrmova_array);
-        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, new ArrayList<>(Arrays.asList(array)));
-        list.setAdapter(adapter);
+        array = getResources().getStringArray(R.array.ukrmova_array); //по умолчанию список
+        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, new ArrayList<>(Arrays.asList(array))); //инициализация адаптера
+        list.setAdapter(adapter); //использование списка адаптером
         toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle(R.string.ukrainskamova);
         setSupportActionBar(toolbar);
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
-        list.setOnItemClickListener((parent, view, position, id) -> {
+        list.setOnItemClickListener((parent, view, position, id) -> { //реагирование на нажатие каждого пункта списка
             Intent intent = new Intent(MainActivity.this, Text_Content_Activity.class);
             intent.putExtra("category", category_index);
             intent.putExtra("position", position);
@@ -58,26 +58,28 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
     @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-        int id = menuItem.getItemId();
-        if (id == R.id.fish) {
+    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) { //нажатие на элементы в боковом меню
+        int id = menuItem.getItemId(); //какой Item был нажат
+        if (id == R.id.ukr_mova) {
             fillArray(R.string.ukrainskamova, R.array.ukrmova_array, 0);
-        } else if (id == R.id.na) {
-            fillArray(R.string.na, R.array.ukrlitra_array, 1);
-        } else if (id == R.id.sna) {
-            fillArray(R.string.sna, R.array.nagolosi_array, 2);
+        } else if (id == R.id.ukr_lit) {
+            fillArray(R.string.ukrliteratura, R.array.ukrlitra_array, 1);
+        } else if (id == R.id.nagolosy) {
+            fillArray(R.string.nagolosy, R.array.nagolosi_array, 2);
+        } else if (id == R.id.fraze) {
+            fillArray(R.string.fraze, R.array.frazeologizms, 3);
         }
         drawer = findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
+        drawer.closeDrawer(GravityCompat.START); //закрытие бокового меню при нажатии на любой Item
         return true;
     }
 
     private void fillArray(int title, int arrayList, int index) {
         toolbar.setTitle(title);
-        array = getResources().getStringArray(arrayList);
-        adapter.clear();
-        adapter.addAll(array);
-        adapter.notifyDataSetChanged();
+        array = getResources().getStringArray(arrayList); //получение данных
+        adapter.clear(); //стирание старого списка
+        adapter.addAll(array); //добавление нового списка в адаптер
+        adapter.notifyDataSetChanged(); //указание адаптеру об изменении данных
         category_index = index;
     }
 }
